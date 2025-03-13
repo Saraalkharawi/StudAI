@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+      <meta charset="UTF-8"> <!--Denna attribut möjliggör teckenuppsättning och stöder alla språk, och emojis-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Denna attribut gör det möjligt för kodningen att anpassa sig till olika skärmar-->
         <title>StudAI</title>
         </head>
       
@@ -23,17 +25,16 @@
          <h2>Your recent plans</h2>
           <ul> <!-- Denna lista ska baseras på vad användaren själv lägger in -->
            <li>Add plan</li> 
-           <li>Add plan</li> 
-           <li>Add plan</li> 
-           <li>Add plan</li> 
           </ul>
 
-          <div>
-            <h3>Studyguide</h3>
+          <div class="studyguide-container">
+            <h2>Studyguide</h2>
+            
+            <div class="studyguide-infobox">
             <ul>
-            <li>Checklist</li> 
-             <li>Studyguide</li> 
-             <li>Quiz</li> 
+            <li><button>Checklist</button></li> 
+             <li><button>Studyguide</button></li> 
+             <li><buttonn>Quiz</button></li> 
             </ul>
          </div>
         
@@ -41,8 +42,5 @@
       
         <footer>
           <p><small>&copy;2025 StudAI, your personal AI planer</small></p>
-       
           </footer>
-        
-        
         </body>
