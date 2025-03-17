@@ -1,2 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudAI - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ 
+  <header class="header">
+    <div class="header-content">
+     <h1><a href="studai.html">StudAI</a></h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="login-card">
+      <form id="loginForm">
+        <!-- knappar för login/signup överst -->
+        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button type="button" class="btn-green">Login</button>
+            <button type="button" class="btn-light-green" onclick="location.href='signup.html'">Signup</button>
+          </div>
+          
+
+        <label for="email">Email or Username</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <a href="#" class="forgot-link">Forgot password?</a>
+
+        <button type="submit" class="btn-green" style="margin-top: 20px;">Login</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2025 StudAI, your personal AI planner</small></p>
+  </footer>
+
+  <!-- JavaScript för fejkad inloggning -->
+  <script>
+    const loginForm = document.getElementById('loginForm');
+  
+    loginForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+  
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+  
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+  
+      const foundUser = users.find(user => user.email === email && user.password === password);
+  
+      if (foundUser) {
+        localStorage.setItem('loggedIn', 'true');
+        localStorage.setItem('userEmail', email);
+        alert('Login successful!');
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Incorrect email or password.');
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
