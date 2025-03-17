@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <h1><a href="studai.html">StudAI Dashboard</a></h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="dashboard-container">
+      <h2>Welcome, <span id="userEmail"></span>!</h2>
+      <p>This is your dashboard.</p>
+      <button id="logout" class="btn-green">Log out</button>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2025 StudAI, your personal AI planner</small></p>
+  </footer>
+
+  <script>
+    // Kollar om man är inloggad
+    if (!localStorage.getItem('loggedIn')) {
+      window.location.href = 'login.html';
+    }
+
+    // Visar inloggad användares email
+    document.getElementById('userEmail').textContent = localStorage.getItem('userEmail');
+
+    // Logout-knappen
+    document.getElementById('logout').addEventListener('click', () => {
+        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('userEmail');
+        window.location.href = 'login.html';
+    });
+  </script>
+
+</body>
+</html>
+
