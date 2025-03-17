@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    background-color: #fff;
+  }
+  
+  /* Gör body till flex och lägg headern överst, main i mitten, footern nederst */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .header {
+    width: 100%;
+    height: 200px;
+    background: url("images/header-bg.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+  }
+  
+  .header-content h1 a {
+    color: #135E3C;
+    text-decoration: none;
+  }
+  
+  /* Main */
+  main {
+    flex: 1; /* Tar upp resterande höjd i flex-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Kortet för login */
+  .login-card {
+    background-color: #F7F7F7;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+    /* Centrera innehållet */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Label & input */
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; 
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Länken för “Forgot password?” */
+  .forgot-link {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #007bff;
+    align-self: flex-end; 
+    text-decoration: none;
+  }
+  
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Knappar */
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Grön knapp */
+  .btn-green {
+    background-color: #2CAC67;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .btn-green:hover {
+    background-color: #249857;
+  }
+  
+  /* Ljusgrön knapp */
+  .btn-light-green {
+    background-color: #A0D7B7;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .btn-light-green:hover {
+    background-color: #87c39b;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Signup-sida styling */
+.signup-card {
+    background-color: #F7F7F7;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .signup-card h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  
