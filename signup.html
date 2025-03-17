@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudAI - Signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <h1><a href="studai.html">StudAI</a></h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="signup-card">
+      <form id="signupForm">
+        <h2>Create your account</h2>
+
+        <label for="newEmail">Email or Username</label>
+        <input type="email" id="newEmail" name="newEmail" required>
+
+        <label for="newPassword">Password</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <button type="submit" class="btn-green" style="margin-top: 20px;">Signup</button>
+
+        <p>Already have an account? <a href="login.html">Login here!</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2025 StudAI, your personal AI planner</small></p>
+  </footer>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const newEmail = document.getElementById('newEmail').value;
+      const newPassword = document.getElementById('newPassword').value;
+
+      // Hämta användare från localStorage, eller skapa en tom array
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+
+      // Kontrollera om användaren redan finns
+      const userExists = users.some(user => user.email === newEmail);
+
+      if (userExists) {
+        alert('User already exists!');
+      } else {
+        // Lägg till ny användare
+        users.push({ email: newEmail, password: newPassword });
+
+        // Spara tillbaka till localStorage
+        localStorage.setItem('users', JSON.stringify(users));
+
+        alert('Account created successfully!');
+        
+        // Skicka tillbaka till login
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+
+</body>
+</html>
