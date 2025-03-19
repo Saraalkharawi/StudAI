@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo  {
+    text-align:left;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+    
+     header {
+        background-color: white;
+        padding: 5px;
+        text-align: center;
+        border-bottom: 1px solid #1a3d1a;
+        padding-bottom: 20px; 
+        width: 97%;
+        display: flex; /* Gör att elementen placeras i en rad */
+        justify-content: space-between; /* Loggan till vänster, menyn till höger */
+        align-items: center; /* Ser till att de är vertikalt centrerade */
+        padding: 15px 20px; /* Utrymme runt headern */
+       
+    }
+
+    #logo  {
+        font-size: 20px;
+        font-weight: bold;
+        color:#003E10;
+        text-decoration: none;
+        transition: color 0.2s eas-in-out, opacity 0.2s eas-in-out;
+        }
+    
+    
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    color: #135E3C;
+}
+
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card, .signup-card, .dashboard-container {
+    background-color: #F7F7F7;
+    width: 380px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-green {
+    background-color: #2CAC67;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background-color: #249857;
+}
+
+.btn-light-green {
+    background-color: #A0D7B7;
+    color: #fff;
+}
+
+.btn-light-green:hover {
+    background-color: #87c39b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Dashboard specific styles */
+.dashboard-container {
+    width: 60%;
+    max-width: 800px;
+}
+
+.checklist-item, .summary-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.completed {
+    background-color: #D4EDDA;
+    text-decoration: line-through;
+}

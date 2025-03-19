@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+      <link rel="stylesheet" href="studyguide.css">
       <meta charset="UTF-8"> <!--Denna attribut möjliggör teckenuppsättning och stöder alla språk, och emojis-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Denna attribut gör det möjligt för kodningen att anpassa sig till olika skärmar-->
         <title>StudAI</title>
         </head>
+        <script src="studyguides.js"></script>
         <body> <!-- Början på websidans kropp-->
-          <div> <!-- divide som stycke-->
-      
-          <header>
-            <h1><a href="studai.html">StudAI</a></h1>
+          
+          <div class="wrapper"> <!-- divide som stycke-->
+        <header>
+          
+            <h1 id="logo"><a href="studai.html">StudAI</a></h1>
         <nav> <!-- navigations delen-->
         <ul>
           <li><a href="studyguide.html">Studyguides</a></li>
-          <li><a href="todos.html">ToDos</a></li>
+          <li><a href="quizbot.html">Quizbot</a></li>
           <li><a href="profile.html">Profile</a></li>
         </ul>
         </nav>
          </header>
         
-        <h2>Studyguides</h2>
+       
 
-          <div>
-         <h3>Your recent plans</h3>
-          <ul> <!-- Denna lista ska baseras på vad användaren själv lägger in -->
-           <li>Add plan</li> 
-          </ul>
-        </div>
-
-          <div class="studyguide-container">
-            <h2>Studyguide</h2>
-            
-            <div class="studyguide-infobox">
-            <ul>
-            <li><button>Checklist</button></li> 
-             <li><button>Studyguide</button></li> 
-             <li><button>Quiz</button></li> 
-            </ul>
-         </div>
         
+        <div class="studyguide-container">
+          <h2>Studyguide</h2>
         
       
+          <div class="button-container">
+              <button class="btn btn-checklist">Checklist</button>
+              <div class="checklist-container"></div>
+      
+              <button class="btn btn-summary">Summary document</button>
+              <div class="summary-container"></div>
+      </div>
+
+      <div id="checklist-items-container"></div>
+      <div id="summary-items-container"></div>
+
+
+       
         <footer>
           <p><small>&copy;2025 StudAI, your personal AI planer</small></p>
           </footer>
-        </body>
+        </div><!-- End wrapper div -->
+      </body>
+    </html>

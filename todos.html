@@ -2,15 +2,20 @@
 <html>
 
     <head>
+      <link rel="stylesheet" href="todos.css">
+      <meta charset="UTF-8"> <!--Denna attribut möjliggör teckenuppsättning och stöder alla språk, och emojis-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Denna attribut gör det möjligt för kodningen att anpassa sig till olika skärmar-->
         <title>StudAI</title>
         </head>
 
         <body> <!-- Början på websidans kropp-->
-          <div> <!-- divide som stycke-->
-        
-        <header>
-          <h1><a href="studai.html">StudAI</a></h1>
-           <nav> <!-- navigations delen-->
+          
+          <div class="wrapper"> <!-- divide som stycke-->
+       
+            <header>
+          <h1 id="logo"><a href="studai.html">StudAI</a></h1>
+           
+          <nav> <!-- navigations delen-->
             <ul>
               <li><a href="studyguide.html">Studyguides</a></li>
               <li><a href="todos.html">ToDos</a></li>
@@ -20,12 +25,16 @@
              </header>
 
             <h2>ToDo's</h2>
+            <p class="todos-information">Here you can list all your tasks or sub-tasks depending on your asignments and/or exams. <br>
+               You can create different lists and structure them as you please. <br>
+               This makes planing your studies easier and you will have a overview with everything you need to get done. </p>
             <div>
-        <button><h3>Add a ToDo list</h3></button>
+        <button class="todo-btn">Add a ToDo list</button>
         
         
         <footer>
             <p><small>&copy;2025 StudAI, your personal AI planer</small></p>
             </footer>
-          </body>
-            </div>
+          </div><!-- End wrapper div -->
+        </body>
+      </html>

@@ -1,0 +1,169 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFFFFF;
+    color: #00631A; /* Mörkgrön text */
+}
+
+a {
+color: #003E10;
+text-decoration: none;
+}
+
+header {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #1a3d1a;
+    margin-bottom: 20px; /* Lägger till avstånd mellan headern och body */
+    width: 97%;
+    display: flex; /* Gör att elementen placeras i en rad */
+    justify-content: space-between; /* Loggan till vänster, menyn till höger */
+    align-items: center; /* Ser till att de är vertikalt centrerade */
+    padding: 15px 20px; /* Utrymme runt headern */
+ 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: light;
+}
+div {
+    padding: 20px;
+}
+
+
+footer {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+#logo a {
+font-size: 20px;
+font-weight: bold;
+color:#003E10;
+text-decoration: none;
+transition: color 0.2s eas-in-out, opacity 0.2s eas-in-out;
+}
+
+#logo a:active {
+    color: #4caf50;
+    opacity: 0.7;
+
+}
+
+.wrapper {
+    display: flex; /* flex gör att jag kan styra innehållet bättre*/
+    flex-direction: column; /* detta gör att allt blir i en lodrätt rad*/
+    min-height: 100vh;
+}
+
+
+
+div {
+    padding: 0px;
+}
+
+main {
+    flex:1;
+}
+
+
+footer {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+#logo {
+    text-align:left;
+    font-size: 20px;
+    }
+
+#logo a {
+font-size: 20px;
+font-weight: bold;
+color: #00631A;
+text-decoration: none;
+transition: color 0.2s eas-in-out, opacity 0.2s eas-in-out;
+}
+
+#logo a:active {
+    color: #4caf50;
+    opacity: 0.7;
+
+}
+
+.wrapper {
+    display: flex; /* flex gör att jag kan styra innehållet bättre*/
+    flex-direction: column; /* detta gör att allt blir i en lodrätt rad*/
+    min-height: 100vh;
+}
+
+
+.delete-acc-btn {
+    background-color:#959c97;
+    color:#eb0d0d;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 26px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s eas-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+.delete-acc-btn:hover {
+background-color: #0b0b0b;
+color:#ffb0b0;
+}
+
+.delete-acc-btn:active {
+transform: scale(0.97);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.change-pass-btn, .save-pass-btn, .logout-btn {
+    background-color:#2CAC67;
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.change-pass-btn:hover, .save-pass-btn:hover, .logout-btn:hover {
+    background-color: #1e7c4c;
+}
+
+.logout-btn {
+    background-color: #ff6b6b;
+}
+
+.logout-btn:hover {
+    background-color: #d94a4a;
+}
+
+input#newPasswordInput {
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

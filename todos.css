@@ -1,0 +1,111 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFFFFF;
+    color: #00631A; /* Mörkgrön text */
+}
+
+a {
+color: #003E10;
+text-decoration: none;
+}
+
+#logo a {
+text-align:left;
+font-size: 20px;
+}
+
+
+header {
+    background-color: white;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px solid #1a3d1a;
+    margin-bottom: 20px; /* Lägger till avstånd mellan headern och body */
+    width: 97%;
+    display: flex; /* Gör att elementen placeras i en rad */
+    justify-content: space-between; /* Loggan till vänster, menyn till höger */
+    align-items: center; /* Ser till att de är vertikalt centrerade */
+    padding: 0px 20px; /* Utrymme runt headern */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: light;
+}
+
+div {
+    padding: 0px;
+}
+
+
+footer {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+#logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00631A;
+    text-decoration: none;
+    transition: color 0.2s eas-in-out, opacity 0.2s eas-in-out;
+    }
+    
+    #logo a:active {
+        color: #4caf50;
+        opacity: 0.7;
+    }
+
+.wrapper {
+    display: flex; /* flex gör att jag kan styra innehållet bättre*/
+    flex-direction: column; /* detta gör att allt blir i en lodrätt rad*/
+    min-height: 100vh;
+}
+
+main {
+flex: 1;
+}
+
+.todo-btn {
+    background-color:#bce5c7;
+    color:#1a3d1a;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 26px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s eas-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+
+
+.todo-btn:hover {
+    background-color:#1a3d1a;
+    color:white;
+}
+
+.todo-btn:active {
+transform: scale(0.97);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todos-information {
+    font-weight: 600;
+    line-height: 2;
+
+}
